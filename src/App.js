@@ -91,58 +91,7 @@ function App() {
 
   return (
     <div>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>quantity</th>
-            <th>price</th>
-            <th>expiry</th>
-            <th>status</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredMedicine.map(
-            ({ id, name, quantity, price, expiry, status }, i) => (
-              <tr key={id}>
-                <td>{id}</td>
-                <td>{name}</td>
-                <td>{quantity}</td>
-                <td>{price}</td>
-                <td>{expiry}</td>
-                <td>{status.toString()}</td>
-                {i === 0 && <td rowSpan={filteredMedicine.length}>{totalPrice}</td>}
-              </tr>
-            )
-          )}
-        </tbody>
-      </table>
-      <br />
-      <br />
-      <table border="1">
-        <tr>
-          <th>name</th>
-          <th>age</th>
-          <th>salary</th>
-          <th>bonus</th>
-          <th>status</th>
-          <th>Total Salary</th>
-          <th>Total Expense</th>
-        </tr>
-        {filteredEmployee.map(({ name, salary, age, bonus, status }, i) => (
-          <tr key={i}>
-            <td>{name}</td>
-            <td>{age}</td>
-            <td>{salary}</td>
-            <td>{bonus}</td>
-            <td>{status.toString()}</td>
-            <td>{salary + bonus}</td>
-            {i === 0 && <td rowSpan={employee.length}>{totalExpense}</td>}
-          </tr>
-        ))}
-      </table>
+      <h1>hello</h1>
     </div>
   );
 }
