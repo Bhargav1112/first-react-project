@@ -1,15 +1,13 @@
-import logo from "./logo.svg";
+
 import "./App.css";
-import City from "./Containers/City";
-import CityFun from "./Containers/CityFun";
+import CountryFun from "./Containers/CountryFun";
 
 function App() {
 
 
   return (
     <div>
-      <City />
-      <CityFun />
+      <CountryFun />
     </div>
   );
 }
