@@ -8,10 +8,12 @@ function FamousPlace({ india, us, country }) {
     // }
 
     return (
-        <ul style={{ listStyle: 'none' }} >
-            {/* {places} */}
-            {country === 'INDIA' ? india.map((c, i) => <li key={i}>{c}</li>) : us.map((c, i) => <li key={i}>{c}</li>)}
-        </ul>
+        <React.Fragment >
+            <ul style={{ listStyle: 'none' }} >
+                {/* {places} */}
+                {country === 'INDIA' ? india.map((c, i) => <li key={i}>{c}</li>) : us.map((c, i) => <li key={i}>{c}</li>)}
+            </ul>
+        </React.Fragment>
     );
 }
 
