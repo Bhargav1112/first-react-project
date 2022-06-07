@@ -10,7 +10,7 @@ function TimerFunc(props) {
         return () => {
             clearInterval(timeI)
         }
-    }, [])
+    }, [timer])
 
     return (
         <div>
